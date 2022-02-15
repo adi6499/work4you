@@ -1,0 +1,953 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contain{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items:center;;
+  background:linear-gradient(145deg ,rgb(24, 24, 26) 0% 60%,rgb(28, 28, 39) 60% 100%);
+  overflow:hidden;
+}
+.navBar{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  box-shadow: 0vmin 4px 4px rgba(0, 0, 0, 0.185);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  z-index:55;
+  background:white;
+  color:black;
+  top:0%;
+  overflow:hidden;
+}
+.navBar > a {
+  margin-right: 2.5vmin;
+  font-size: 2.2vmin;
+  text-decoration: none;
+  color: black;
+  font-weight: 530;
+  letter-spacing: 0.01vmin;
+}
+.head {
+  position: absolute;
+  left: 5%;
+  font-size: 5vmin;
+  font-family: "Akaya Kanadaka", cursive;
+  font-family: "Alfa Slab One", cursive;
+   text-transform:capitalize;
+   color:#9b804a;
+}
+.zone{
+    width:18vmin;
+    height:5vmin;
+    position:absolute;
+    right: 15%;
+    border:1px solid black;
+    outline:none;
+    background:none;
+    color:black;
+    border-radius:.4vmin;
+    display: flex;
+    flex-direction: row;
+    place-items:center;
+    justify-content: center;
+}
+.accountHead{
+    position:absolute;
+    right:5%;
+    color:red;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+
+.employeesImage{
+    width:90%;
+    height:95%;
+    position:absolute;
+    top:8%;
+
+}
+.employeesImage > img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    filter:brightness(60%)
+}
+
+.messageBox{
+    width:60vmin;
+    height:28vmin;
+    background:rgba(0, 0, 0, 0.658);
+    color:rgba(238, 238, 238, 0.698);
+    padding:2vmin 2vmin 2vmin 5vmin;
+    position:absolute;
+    top:20%;
+    left:10%;
+    font-size: 4vmin;
+    border-radius:1vmin;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing:1vmin;
+    font-weight: 600;
+    line-height: 7vmin;
+}
+#join{
+    width:15vmin;
+    height:5vmin;
+    background:black;
+    font-size:2vmin;
+    color:white;
+    position:absolute;
+    bottom:8%;
+    left:7%;
+    border:1px solid white;
+    outline:none;
+    border-radius: 1vmin;
+}
+#join:hover{
+    background:wheat;
+    color:black;
+}
+
+.searchBars{
+    width:100%;
+    height:20%;
+    background:rgba(0, 0, 0, 0.411);
+    color:white;
+    padding:2vmin;
+    position:absolute;
+    bottom:5%;
+    display: flex;
+    flex-direction: row;
+    
+    place-items:center;
+}
+.searchBars > input{
+    position:absolute;
+    border:none;
+    outline:none;
+    border:1px solid rgba(255, 255, 255, 0.377);
+    border-radius:.5vmin;
+    padding:2vmin;
+    font-size:1.8vmin;
+    letter-spacing: .1vmin;
+    text-transform: uppercase;
+}
+.searchBars > input:focus{
+    animation:borders 400ms linear forwards;
+}
+@keyframes borders{
+    0%{
+        border:1px solid white;
+        opacity: 10;
+    }
+    100%{
+        border:1px solid rgba(255, 255, 255, 0.295);
+       
+    }
+}
+.searchBars >.firstInput{
+    width:30%;
+    height:25%;
+    background:black;
+    color:white;
+    left:8%;
+}
+.searchBars > .secondInput{
+    width:20%;
+    height:25%;
+    background:black;
+    color:white;
+    left:40%;
+}
+.searchBars > .thirdInput{
+    width:10%;
+    height:25%;
+    background:black;
+    color:white;
+    right:28%;
+}
+
+#search{
+    width:20vmin;
+    height:7vmin;
+    background:royalblue;
+    color:white;
+    display: flex;
+    flex-direction:row;
+    place-items: center;
+    justify-content:center;
+    position:absolute;
+    right:5%;
+    border-radius:.5vmin;
+    outline:none;
+    border:none;
+    font-size:2.5vmin;
+    padding:0vmin 0vmin 0vmin 2vmin;
+}
+#search > i{
+font-size: 4vmin;
+position: absolute;
+left:10%;;
+
+}
+
+.contain1{
+    width:100vw;height:70vh;
+    display: grid;
+    place-items: center;
+    position:relative;
+    overflow:hidden;
+    background-image:conic-gradient(rgba(95, 95, 95, 0.192) 25deg,rgba(75, 75, 75, 0.116) 55deg);
+    background-size:10px 10px 
+}
+
+.headMessage{
+    font-size:7vmin;
+    text-transform:uppercase;
+    position:absolute;
+    top:5%;
+    font-weight: 500;
+}
+.headMessage > span{
+    color:red;
+    font-weight: bold;
+}
+.containQuote{
+    font-size:3.5vmin;
+    text-align: center;
+    width:70%;
+    line-height:7vmin;
+    top:15%;
+    position: absolute;
+    top:25%;
+}
+#quote{
+    font-size:3vmin;
+    font-weight:600;
+    width:50%;
+    text-align:center;
+    text-transform: capitalize;
+    position:absolute;
+    bottom:15%;
+    line-height: 5vmin;
+}
+
+#quote::before{
+    content:'"';
+    position:absolute;
+    color:black;
+    font-size: 4vmin;
+    transform: translateX(-150%);
+}
+#quote::after{
+    content:'"';
+    position:absolute;
+    color:black;
+    font-size: 4vmin;
+    transform: translateX(100%);
+}
+.contain2{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    background:black;
+    display:grid;
+    place-items:center;
+}
+.contain2 > video{
+    position:absolute;
+    width:90%;
+    height:90%;
+    filter:brightness(40%);
+}
+
+.textOnVideo{
+    font-size: 5vmin;
+    color:white;
+    position:absolute;
+    z-index: 44;
+    text-transform: capitalize;
+    width:40%;
+    line-height:7vmin;
+    text-align:center;
+}
+.contain2 > i{
+    position:absolute;
+    z-index:65;
+    font-size:10vmin;
+    color:red;
+    top:25%;
+}
+.contain3{
+    width:100vw;
+    height:70vh;
+    position:relative;
+    overflow:hidden;
+
+}
+.yellowBoard{
+    left:0%;
+    width:50%;
+    height:100%;
+    background:#ecc731;
+    color:white;
+    font-size: 7vmin;
+    left:0%;
+    position:absolute;
+    display: grid;
+    place-items: center;
+}
+
+#readMore{
+    width:15vmin;
+    height:5vmin;
+    border:1px solid white;
+    color:white;
+    background:none;
+    position:absolute;
+    top:65%;
+}
+.contain3 > img{
+    width: 50%;
+    height:100%;
+    position:absolute;
+    right:0%;;
+}
+.contain4{
+    width:100vw;
+    height:130vh;
+    position:relative;
+    display:grid;
+    place-items:center;
+}
+.galleryBox{
+    width:70%;
+    height:80%;
+    position:absolute;
+    overflow: scroll;
+}
+.headingContain4{
+    font-size:4vmin;
+    font-weight: bold;
+    position:absolute;
+    top:4%;;
+}
+.galleryBox{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.box{
+    width:35vmin;
+    height:35vmin;
+    position:relative;
+    overflow:hidden;
+    margin:1vmin;
+}
+.box > img{
+    width:100%;
+    height:100%;position:absolute;
+}
+
+.box >h1{
+    width:100%;
+    height:15%;
+    background:black;
+    color:white;
+    position:absolute;
+    bottom:0%;
+    display: grid;
+    place-items:center; ;
+    text-transform: uppercase;
+    font-size:2vmin
+}
+.box > p{
+    background:royalblue;
+    color:white;
+    padding:3vmin;
+    text-align: center;
+    width:100%;
+    height:85%;
+    position:absolute;;
+    text-transform: uppercase;
+    display: grid;
+    place-items:center; ;
+    word-spacing:1vmin ;
+    line-height: 5vmin;
+    transform:translateY(120%);
+    opacity: 0;
+    transition: all 300ms linear;;
+}
+.box:hover p{
+    transform:translateY(0%);
+    opacity: 10;
+}
+.containGoal{
+    width:100vw;
+    height:90vh;
+    display: grid;
+    place-items:center;
+    position:relative;;
+    background:rgb(255, 255, 255);
+}
+.containGoal > h1{
+    color:black;
+    font-weight: bold;
+    position:absolute;
+    top:5%;
+    font-size: 5vmin;
+}
+.imagesOfGoal{
+    width:100%;
+    height:60%;
+    position:absolute;
+    bottom:20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagesOfGoal  > .boxGoal{
+    width:40vmin;
+    height:100%;
+    position:relative;
+    transition: all 200ms linear;
+    overflow:hidden;
+}
+.boxGoal > img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    transition: all 200ms linear;
+    transform:scale(1.5);
+}
+
+.boxGoal:hover img{
+    transform:scale(1);
+}
+
+
+.footer{
+    width:100vw;
+    height:50vh;
+    background:linear-gradient(to right,rgb(20, 20, 58),rgb(28, 28, 39));
+    color:white;
+    position:relative;
+
+    
+}
+.payment{
+    position:absolute;
+    bottom:10%;
+    right:5%;
+  
+    width:30%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align:center;
+    height:16%;
+    place-items:center;
+    color:white;
+}
+.payment > h1{
+    position:absolute;
+    top:-50%;
+    left:30%;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.follow{
+    position:absolute;
+    display: flex;
+    right:5%;
+    position:absolute;
+    top:45%;
+ 
+  
+    width:30%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    text-align:center;
+    height:16%;
+    place-items:center;
+    color:white;
+}
+.follow > h1{
+    position:absolute;
+    top:-50%;
+    left:40%;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+.follow > i{
+    font-size:5vmin;
+    transition: all 100ms linear;
+}
+.follow > i:hover{
+    color:rgb(75, 102, 255);
+   
+
+}
+.information{
+    width:20vmin;
+    height:70%;
+    position:absolute;
+   
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+    top:15%;
+    left:10%;
+    text-align:center;
+}
+.jobSeekers{
+    width:20vmin;
+    height:70%;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+    top:15%;
+    left:30%;
+    text-align:center;
+}
+    
+.employers{
+    width:20vmin;
+    height:70%;
+    position:absolute;
+    line-height: 6vmin;
+    display:flex;
+    flex-direction:column;
+    top:15%;
+    left:50%;
+    text-align:center;
+}
+.employers > h2{
+    font-size: 3vmin;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: .2vmin;
+}
+.information > h2{
+    font-size: 3vmin;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: .2vmin;
+}
+.jobSeekers> h2{
+    font-size: 3vmin;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: .2vmin;
+}
+.employers > p{
+    font-size: 2vmin;
+    text-transform: capitalize;
+    color:#6e6f73;
+    font-weight: 500;
+    text-align: start;
+}
+.information > p{
+    font-size: 2vmin;
+    text-transform: capitalize;
+    color:#6e6f73;
+    font-weight: 500;
+    text-align: start;
+}
+.jobSeekers> p{
+    font-size: 2vmin;
+    text-transform: capitalize;
+    color:#6e6f73;
+    font-weight: 500;
+    text-align: start;
+}
+
+.stayUpdated{
+    width:50vmin;
+    height:10vmin;
+   
+    position:absolute;
+    right:5%;
+    top:5%;
+    text-align: center;
+    
+}
+.stayUpdated > h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 400;
+    transform: translateY(-10%);
+}
+.stayUpdated >input{
+    width:60%;
+    height:40%;
+    border:1px solid rgb(197, 197, 197);
+    background:rgb(13, 13, 31);
+    color:white;
+    padding:2vmin;
+    outline:none;
+    position: absolute;
+    left:5%;
+    bottom:5%;
+    text-transform: uppercase;
+}
+#signUp{
+    width:12vmin;
+    height:45%;
+    position:absolute;
+    right:10%;
+    bottom:5%;
+    background:#78797c;;
+    color:#dbdada;
+    font-size: 2vmin;
+    text-transform: uppercase;
+    outline:none;
+    border:none;
+}
+.secondImage{
+    display: none;
+}
+
+.firstImage{
+    display: block;
+}
+.contain,.contain1,.contain2,.contain3,.contain4.footer{
+    overflow: hidden;
+}
+.headBar{
+    display: none;
+}
+/* media queries for responsive design */
+
+@media only screen and (max-width:750px){
+    .secondImage{
+        display: block;
+    }
+    .firstImage{
+        display: none;
+    }
+    .contain{
+        height: 100vh;
+    }
+    .contain > .employeesImage{
+        width:100%;
+        height:100%;
+    }
+    .navBar{
+        width:100%;
+         height:0%;
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition:all 400ms linear;
+    }
+    .navBar  > a{
+        font-size:6vmin;
+        text-transform: uppercase;
+        margin-bottom:3vmin;
+        text-align: start;
+    }
+    .head{
+        top:5%;
+    }
+    .zone{
+        width:35vmin;
+        height:8vmin;
+        bottom:5%;
+        left:34%;
+    }
+    .accountHead{
+        top:6%;
+        right:2%;
+    }
+    .containQuote{
+        font-size: 4vmin;
+        line-height: 8vmin;
+        text-align: center;
+    }
+    #quote{
+        line-height:7vmin;
+    }
+    .headBar{
+        display: block;
+     
+       
+        width:100%;
+        height:10%;
+        background:white;
+        position: absolute;
+        top:0%;
+        
+        z-index: 300;
+    }
+    .head1{
+        top:40%;
+        left:10%;
+        position:absolute;
+        font-size: 5vmin;
+        font-family: "Akaya Kanadaka", cursive;
+        font-family: "Alfa Slab One", cursive;
+         text-transform:capitalize;
+         color:#9b804a;
+    }
+    .open{
+        width:8vmin;
+        height:8vmin;
+        position:absolute;
+        right:5%;
+        top:35%;
+         border:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background:white;
+        outline:none;
+
+    }
+    .firstStick{
+        width:100%;
+        height:10%;
+        background:black;
+     
+        transform-origin: left;
+        transition:all 300ms linear;
+    }
+    .secondStick{
+        width:100%;
+        height:10%;
+        background:black;
+        transform-origin: left;
+        transition:all 300ms linear;
+    }
+    .firstStickToggle{
+        transform:rotateZ(30deg);
+        width:100%;
+        height:8%;
+    }
+    .secondStickToggle{
+        width:100%;
+        height:8%;
+        transform:rotateZ(-30deg);
+    }
+    .heightToggle{
+        height:100%;
+    }
+
+    .searchBars{
+        height: 20%;
+        bottom:5%;;
+    }
+  
+    
+    
+    #search{
+        width:20vmin;
+        height:7vmin;
+        background:royalblue;
+        color:white;
+        display: flex;
+        flex-direction:row;
+        place-items: center;
+        justify-content:center;
+        position:absolute;
+        right:5%;
+        border-radius:.5vmin;
+        outline:none;
+        border:none;
+        font-size:2.5vmin;
+        padding:0vmin 0vmin 0vmin 2vmin;
+    }
+    .textOnVideo{
+        font-size: 5vmin;
+        position:absolute;
+        bottom:5%;
+        right:5%;;
+        width:90%;
+        text-align: center;
+    }
+    .contain2 > i{
+        position:absolute;
+        top:5%;left:5%;
+    }
+    .contain3{
+        height:100vh;
+    }
+    .yellowBoard{
+        width:100%;
+        height: 50%;
+        top:0%;
+    }
+    #readMore{
+        width:25vmin;
+        height:8vmin;
+    }
+  
+    .contain3 > img{
+        position:absolute;
+        bottom:0%;
+        width:100%;
+        height:50%;
+    }
+    .contain4{
+        height: 150vh;
+    }
+    .headingContain4{
+        top:2%;
+        font-size:5vmin;
+    }
+    .galleryBox{
+       
+        width:100%;
+        height:90%;
+        overflow: scroll;
+        justify-content: space-between;
+    }
+    .box{
+        height:47vmin;
+        width:45vmin;
+    }
+    .containGoal{
+        width:100vw;
+        height:100vh;
+        position:relative;
+    }
+    .containGoal > h1{
+        font-size:7vmin;
+        position: absolute;
+        top:2%;
+    }
+    .imagesOfGoal{
+        width:100%;
+        height:90%;
+        padding:3vmin;
+        bottom:0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .boxGoal{
+        width:15vmin;
+        height:30vmin;
+        overflow:hidden;
+    }
+    .boxGoal:nth-child(even){
+        transform:translateX(120%)
+    }
+   .footer{
+       height:100vh;
+   }
+   .information{
+       width:40%;
+       height:30%;
+     
+   }
+   .information > h2{
+       font-size:5vmin;
+       transform:translateX(-4%)
+   }
+   .information  > p{
+       font-size:4vmin;
+   }
+   .jobSeekers{
+    width:40%;
+    height:23%;
+    
+    top:45%;
+    left:10%;
+    justify-content: space-evenly;
+   }
+   .jobSeekers  > p{
+    font-size:4vmin;
+   } 
+   .jobSeekers >  h2{
+    font-size:5vmin;
+    transform:translateX(-6%)
+}
+.employers{
+    top:69%;
+    text-align: left;
+    width:40%;
+    left:10%;
+    height:15%;
+}
+.employers  > p{
+    font-size:4vmin;
+   } 
+   .employers >  h2{
+    font-size:5vmin;
+}
+.stayUpdated {
+    width:100%;
+    height:10%;
+    position:absolute;
+    top:2%;
+    left:0%;
+}
+.stayUpdated > h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size:6vmin;
+    transform: translateY(-12%);
+}
+#signUp{
+    width:25vmin;
+    right:4%;
+    font-size: 3vmin;
+    transform: translateY(5%);
+}
+.follow{
+    width:100%;
+    height:5%;
+  
+    top:95%;
+    left:0%;
+    position:absolute;
+}
+.follow > h1{
+    position:absolute;
+    top:-160%;
+    left:35%;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+.follow > i{
+    font-size:6vmin;
+}
+
+.payment{
+    width:30%;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+  
+    top:40%;
+}
+.payment > h1{
+    font-size: 6.6vmin;;
+    width:12vmin;
+    
+    top:-30%;
+    left:10%;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+}
